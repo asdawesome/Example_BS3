@@ -2,15 +2,55 @@
 <hmtl>
 
     <head>
-        <title>Да да,это мой вебсайт.</title>>
+        <title>Да да,это мой вебсайт.</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<link rel="stylesheet" href="css.css">-->
-
+        <style>
+            .container {
+              position: relative;
+              width: 50%;
+            }
+            
+            .image {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+            
+            .overlay {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;
+              opacity: 0;
+              transition: .5s ease;
+              background-color: #008CBA;
+            }
+            
+            .container:hover .overlay {
+              opacity: 1;
+            }
+            
+            .text {
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              text-align: center;
+            }
+            </style>
         <link rel="stylesheet" href="css/bootstrap.css">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" href="css/background.css"> -->
     </head>
 
     <body>
@@ -53,7 +93,7 @@
             </div>
             <!-- /.container-fluid -->
 
-        </div> -->
+        </div>
             <div class="container">
                 <form name="registration_form" id="registration_form" class="form-horizontal">
                     <div class="form-group">
@@ -103,7 +143,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="thumbnail">
                         <a href="pictures/car1.jpg" target="_blank">
-                            <img src="pictures/car1.1.jpg" alt="Моя ляля" class="img-rounded">
+                            <img src="pictures/car1.1.jpg" alt="Моя ляля" class="img-rounded hoverable" >
                             <div class="caption">
                                 <p>Lamborghini gallardo turbo v12</p>
                                 <p>85 000$</p>
@@ -284,39 +324,95 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
 
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
 
+      <!-- Grid row -->
+      <div class="row">
 
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
 
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Here you can use rows and columns here to organize your footer content.</p>
 
+        </div>
+        <!-- Grid column -->
 
+        <hr class="clearfix w-100 d-md-none pb-3">
 
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
 
-        <!--</div>-->
-        <!--<div class="grid">-->
-        <!--<div class="box item1"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Детский мир</div>-->
-        <!--<div class="box item2"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Работа</div>-->
-        <!--<div class="box item3"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Бизнес и услуги</div>-->
-        <!--<div class="box item4"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Обмен</div>-->
-        <!--<div class="box item5"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Недвижимость</div>-->
-        <!--<div class="box item6"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Животные</div>-->
-        <!--<div class="box item7"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Мода и стиль</div>-->
-        <!--<div class="box item8"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Транспорт</div>-->
-        <!--<div class="box item9"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Дом и сад</div>-->
-        <!--<div class="box item10"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Хобби,отдых и спорт</div>-->
-        <!--<div class="box item11"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Запчасти для транспорта</div>-->
-        <!--<div class="box item12"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Электроника </div>-->
-        <!--<div class="box item13"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Отдам даром</div>-->
-        <!--<div class="box item14"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Лишнее 1</div>-->
-        <!--<div class="box item15"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Лишнее 2</div>-->
-        <!--<div class="box item16"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Лишнее 3</div>-->
-        <!--<div class="box item17"><img class="img" src="https://static-olxeu.akamaized.net/static/olxua/packed/img/2f148f3921d9f55e813b795a666a462d4f.png">Лишнее 4</div>-->
-        <!--</div>-->
-        <section id="mainsearch">
-        </section>
-        <div class="container"></div>
-        <footer>
-            <div class="container"></div>
-        </footer>
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- <div class="container">
+    <img src="pictures/logo.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Да,я и такое умею</div>
+    </div>
+  </div>
+</div> -->
+  <!-- Footer -->
     </body>
 </hmtl>
