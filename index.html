@@ -8,17 +8,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.css">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
         <link rel="stylesheet" href="css/footer.css">
     </head>
 
     <body>
         <header>
             <div class="container">
-                <!-- Second navbar for categories -->
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">OLX</a>
+                            </div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#squarespaceModal">Login</a>
+                                    <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">
+                                                        <span aria-hidden="true">×</span>
+                                                        <span class="sr-only">Close</span>
+                                                    </button>
+                                                    <h3 class="modal-title" id="lineModalLabel">Логин</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Email address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Password</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Запомнить меня
+                                                        </label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-default">Принять</button>
+                                                    </form>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                                                        <div class="btn-group" role="group">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal" role="button">Close</button>
+                                                        </div>
+                                                        <div class="btn-group btn-delete hidden" role="group">
+                                                            <button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal" role="button">Закрыть</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">+ПОДАТЬ ОБЪЯВЛЕНИЕ</a>
+                                </li>
+                                <li>
+                                    <a href="#">язык | мова</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--<div class="container">
                 <nav class="navbar navbar-default">
                     <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <a class="navbar-brand" href="#">
                                 <img class="logo" src="pictures/logo.png" alt="Лого" width="30" height="30">
@@ -42,67 +104,115 @@
 
 
                         </div>
-                        <!-- /.navbar-collapse -->
                     </div>
-                    <!-- /.container -->
                 </nav>
-                <!-- /.navbar -->
-
-
-            </div>
-            <!-- /.container-fluid -->
-
+            </div>-->
         </div>
-            <div class="container">
-                <form name="registration_form" id="registration_form" class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-sm-4">
-                            <label for="firstname" class="sr-only"></label>
-                            <input id="firstname" class="form-control input-group-lg reg_name" type="text" name="firstname" title="Enter first name"
-                                placeholder="First name">
-                        </div>
-                        <div class="col-sm-4">
-                            <label for="lastname" class="sr-only"></label>
-                            <input id="lastname" class="form-control input-group-lg reg_name" type="text" name="lastname" title="Enter last name" placeholder="Last name">
-                        </div>
-                        <div class="col-sm-4">
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> ПОИСК</button>
-                            </button>
-                        </div>
-                </form>
-                </div>
-        </header>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <i class="glyphicon glyphicon-camera" style="font-size:20px;"> Фото и видео техника</i>
-                </div>
-                <div class="col-md-4">
-                    <i class="glyphicon glyphicon-phone" style="font-size:20px;"> Мобильные устройства</i>
-                </div>
-                <div class="col-md-4">
-                    <i class="glyphicon glyphicon-cd" style="font-size:20px;"> Мобильные устройства</i>
-                </div>
+            <form name="registration_form" id="registration_form" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-4">
+                        <label for="firstname" class="sr-only"></label>
+                        <input id="firstname" class="form-control input-group-lg reg_name" type="text" name="firstname" title="Enter first name"
+                            placeholder="First name">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="lastname" class="sr-only"></label>
+                        <input id="lastname" class="form-control input-group-lg reg_name" type="text" name="lastname" title="Enter last name" placeholder="Last name">
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> ПОИСК</button>
+                        </button>
+                    </div>
+            </form>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <i class="glyphicon glyphicon-camera" style="font-size:20px;"> Фото и видео техника</i>
-                </div>
-                <div class="col-md-4">
-                    <i class="glyphicon glyphicon-phone" style="font-size:20px;"> Мобильные устройства</i>
-                </div>
-                <div class="col-md-4">
-                    <i class="glyphicon glyphicon-ruble" style="font-size:20px;"> Мани</i>
-                </div>
+            <!-- <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Детский мир
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">Детская одежда</li>
+                    <li>
+                        <a href="#">Детские автокресла</a>
+                    </li>
+                    <li>
+                        <a href="#">Детский транспорт</a>
+                    </li>
+                    <li>
+                        <a href="#">Прочие детские товары</a>
+                </ul>
             </div>
-
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Недвижимость
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header"></li>
+                    <li>
+                        <a href="#">Коммерческая недвижимость</a>
+                    </li>
+                    <li>
+                        <a href="#">Предложения от застройщиков</a>
+                    </li>
+                    <li>
+                        <a href="#">Дома</a>
+                    </li>
+                    <li>
+                        <a href="#">Квартиры,комнаты</a>
+                    </li>
+                </ul>
+                <div class="btn-group">
+                    <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Транспорт
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"></li>
+                        <li>
+                            <a href="#">Легковые автомобили</a>
+                        </li>
+                        <li>
+                            <a href="#">Грузовые автомобили</a>
+                        </li>
+                        <li>
+                            <a href="#">Автобусы</a>
+                        </li>
+                        <li>
+                            <a href="#">Мото</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </header>
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="glyphicon glyphicon-camera" style="font-size:20px;"> Фото и видео техника</i>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="glyphicon glyphicon-phone" style="font-size:20px;"> Мобильные устройства</i>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="glyphicon glyphicon-cd" style="font-size:20px;"> Мобильные устройства</i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="glyphicon glyphicon-camera" style="font-size:20px;"> Фото и видео техника</i>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="glyphicon glyphicon-phone" style="font-size:20px;"> Мобильные устройства</i>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="glyphicon glyphicon-ruble" style="font-size:20px;"> Мани</i>
+                    </div>
+                </div> -->
+            <hr>
             <h3>Объявления</h3>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <div class="thumbnail">
                         <a href="pictures/car1.jpg" target="_blank">
-                            <img src="pictures/car1.1.jpg" alt="Моя ляля" class="img-rounded hoverable" >
+                            <img src="pictures/car1.1.jpg" alt="Моя ляля" class="img-rounded">
                             <div class="caption">
                                 <p>Lamborghini gallardo turbo v12</p>
                                 <p>85 000$</p>
@@ -285,62 +395,133 @@
         </div>
         <div class="container">
 
-<footer>
-<section id="footer">
-		<div class="container">
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-					<ul class="list-unstyled list-inline social text-center">
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
-					</ul>
-				</div>
-				</hr>
-			</div>	
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
-					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
-				</div>
-				</hr>
-			</div>	
-		</div>
-	</section>
-   </footer>
+            <footer>
+                <section id="footer">
+                    <div class="container">
+                        <div class="row text-center text-xs-center text-sm-left text-md-left">
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <h5>Quick links</h5>
+                                <ul class="list-unstyled quick-links">
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>About</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>Videos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <h5>Quick links</h5>
+                                <ul class="list-unstyled quick-links">
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>About</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>Videos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <h5>Quick links</h5>
+                                <ul class="list-unstyled quick-links">
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>About</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-angle-double-right"></i>Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://wwwe.sunlimetech.com" title="Design and developed by">
+                                            <i class="fa fa-angle-double-right"></i>Imprint</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                                <ul class="list-unstyled list-inline social text-center">
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void();">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void();" target="_blank">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                <p>
+                                    <u>
+                                        <a href="https://www.nationaltransaction.com/">National Transaction Corporation</a>
+                                    </u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp,
+                                    Minneapolis, MN]</p>
+                                <p class="h6">&copy All right Reversed.
+                                    <a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a>
+                                </p>
+                            </div>
+                            </hr>
+                        </div>
+                    </div>
+                </section>
+            </footer>
     </body>
 </hmtl>
