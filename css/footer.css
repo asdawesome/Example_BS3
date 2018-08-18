@@ -77,6 +77,9 @@ section .section-title {
     margin-top:10px;   
 }
 
+.bmargin {
+	margin-top:10px;
+}
 /* .modal-header {
 	padding-bottom: 5px;
 }
